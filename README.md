@@ -23,6 +23,11 @@ As a final step, Ensembling all models was used to get the best prediction with 
 ## Results
 The analysis found that some pet food brands have consistently positive sentiment (e.g. "I love Blue Buffalo!", "The current recommended food to feed is kibble that follows WSAVA guidelines. These brands are as follows: Purina, Royal Canin, Hill's Science Diet, Eukanuba, and Iams.", "Purina dry food is much lower quality than  Tiki cat where the first few ingredients were fish."), while others have consistently negative sentiment (e.g. "There has been a pet food Recall for Royal Canin!", "I’m honestly about done with the wellness brand. Their customer service is not helpful and always insists they “haven’t changed their formula”, but my cats are very in-tune with their food and any changes that happen with it. They once stopped eating their kibbles flat out and it turns out there was the *slightest* change to the recipe that shouldn’t have been noticed, but they did.", "I've been feeding Purina Beyond for ages to my 2 cats (The whitefish or salmon) because one of my cats has a sensitive tummy and that doesn't make her barf, and my other cat has a moderate chicken allergy that leaves him itchy. It's about $35 for an 11lb bag right now, but they changed the recipe and added chicken meal to it.", " was feeding him royal canin first but recently found out it has corn , Chicken byproducts , soy and wheat that's really bad for dogs should I still go with royal canin or switch to orijen or acana?"). Some brands also have mixed sentiment, with both positive and negative comments (e.g. "Hill's Science Diet is expensive, but it works well for my dog's health issues.", "instinct (another one they really do not like), Applaws (this one’s hit or miss, but it’s so expensive to be a miss)", "royal canin dermacomfort worsens the skin condition of my dog my dog’s been battling dandruff since last december, mostly below his mouth, chest and paws. my vet recommended changing his diet to royal canin dermacomfort."). These insights could be valuable for pet food companies looking to understand how consumers perceive their brand, as well as for pet owners looking for recommendations on which pet food brands to try.
 
+Also, the results of the final model which is an ensembled model is the accuracy of 0.91 for test data and 0.95 for train data. In this project, both false positives and false negatives are equally important and should be minimized. So, the accuracy score was considered as the metric to evaluate the classifier. Here is the confsudion matrix for the final model:
+
+![confusion matrix](./imgs/confusion_matrix.png)
+
+
 ## Next Step
 Possible next steps for this project include:
 
@@ -30,7 +35,6 @@ Possible next steps for this project include:
 - Experimenting with different sentiment analysis techniques or lexicons to see if they produce different results.
 - Doing same analysis on other websites and reviews.
 - Conducting further analysis to identify any patterns or trends in the sentiment scores for different pet food brands (e.g. do certain brands tend to have more positive sentiment among dog owners vs. cat owners?)
-
 
 
 
